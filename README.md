@@ -37,16 +37,24 @@ This project is a simple Invoice Management System built using Java and JDBC for
 Models contains the classes that represent the entities in the system.
 
 Customer.java: Represents a customer with properties such as ID, name, email, phone number, and address.
+
 Invoice.java: Represents an invoice with properties such as ID, customer ID, date, total amount, discount, final amount, status, and list of invoice items.
+
 InvoiceItem.java: Represents an item in an invoice with properties such as ID, invoice ID, product ID, quantity, and price.
+
 Product.java: Represents a product with properties such as ID, name, and price.
+
 InvoiceStatus.java: An enumeration representing the status of an invoice (PAID or UNPAID).
 
 DAO (Data Access Object) module handles all the database operations.
 
 CustomerDAO.java: Provides CRUD operations for the Customer entity.
+
 InvoiceDAO.java: Provides CRUD operations for the Invoice entity and includes methods to retrieve invoices by status and by customer ID and status.
+
 InvoiceItemDAO.java: Provides CRUD operations for the InvoiceItem entity.
+
 ProductDAO.java: Provides CRUD operations for the Product entity.
+
 DbConnection.java: Contains methods for establishing a connection to the database.
     
